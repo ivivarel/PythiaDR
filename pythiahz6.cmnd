@@ -1,0 +1,27 @@
+! Number of events - use 0 for all LHEF events in the input file.
+Main:numberOfEvents = 1000
+
+! Number of events to list and number of errors to allow.
+Next:numberShowLHA = 1
+Next:numberShowInfo = 1
+Next:numberShowProcess = 1
+Next:numberShowEvent = 1
+Main:timesAllowErrors = 50000
+
+Random:setSeed = on
+Random:seed = 134628
+
+PDF:lepton = off
+HiggsSM:ffbar2HZ = on
+23:onMode = off
+23:onIfAny = 12 14 
+25:onMode = off
+25:onIfAny = 22
+24:onMode = off
+24:onIfAny = 1 2 3 4
+
+Beams:idA =  11
+Beams:idB = -11
+Beams:eCM = 240
+
+Tune:ee =3
